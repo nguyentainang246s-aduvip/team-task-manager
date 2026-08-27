@@ -25,6 +25,16 @@
         </div>
       </div>
     </header>
+        <!-- Form thêm task mới -->
+    <div class="add-task-bar">
+      <input type="text" id="new-task-input" placeholder="Nhập tiêu đề công việc mới..." />
+      <select id="new-task-col">
+        <option value="todo">📌 To Do</option>
+        <option value="in-progress">⚡ In Progress</option>
+        <option value="done">✅ Done</option>
+      </select>
+      <button id="btn-add-task">+ Thêm Task</button>
+    </div>
 
     <main class="board">
       <section class="column" id="col-todo">
