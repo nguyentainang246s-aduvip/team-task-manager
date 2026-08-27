@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Task Manager | Dự án Git Thực Chiến</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="brand">
+        <span class="badge">Git Team Practice</span>
+        <h1>⚡ Team Task Manager</h1>
+        <p class="subtitle">Dự án mô phỏng môi trường làm việc thực tế cùng Team</p>
+      </div>
+      <div class="user-info">
+        <div class="avatar">👨‍💻</div>
+        <div>
+          <span class="user-name">Nguyễn Đức Tài Năng</span>
+          <span class="role">Frontend Developer</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="board">
+      <section class="column" id="col-todo">
+        <div class="col-header">
+          <h2>📌 Cần làm (To Do)</h2>
+          <span class="count" id="todo-count">2</span>
+        </div>
+        <div class="task-list" id="todo-list">
+          <div class="task-card">
+            <h4>Tạo tài liệu README.md</h4>
+            <p>Viết mô tả dự án và hướng dẫn cho thành viên mới.</p>
+            <span class="tag tag-docs">Docs</span>
+          </div>
+          <div class="task-card">
+            <h4>Thiết kế giao diện Task Board</h4>
+            <p>Xây dựng layout dạng cột Kanban cho nhóm.</p>
+            <span class="tag tag-ui">UI/UX</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="column" id="col-in-progress">
+        <div class="col-header">
+          <h2>⚡ Đang làm (In Progress)</h2>
+          <span class="count" id="in-progress-count">1</span>
+        </div>
+        <div class="task-list" id="in-progress-list">
+          <div class="task-card">
+            <h4>Học quy trình Git Teamwork</h4>
+            <p>Thực hành Branching, Merge & xử lý Conflict.</p>
+            <span class="tag tag-core">Core</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="column" id="col-done">
+        <div class="col-header">
+          <h2>✅ Hoàn thành (Done)</h2>
+          <span class="count" id="done-count">1</span>
+        </div>
+        <div class="task-list" id="done-list">
+          <div class="task-card">
+            <h4>Cài đặt Git & Cấu hình máy</h4>
+            <p>Cấu hình user.name và user.email trên máy cá nhân.</p>
+            <span class="tag tag-setup">Setup</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
