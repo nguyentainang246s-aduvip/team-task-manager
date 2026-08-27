@@ -1,0 +1,10 @@
+# Bỏ qua file chứa mật khẩu
+.env
+*.env
+
+# Bỏ qua thư mục rác hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Bỏ qua log lỗi
+*.log
